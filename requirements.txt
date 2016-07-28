@@ -1,0 +1,4 @@
+pyknon 
+scipy
+numpy
+matplotlib
