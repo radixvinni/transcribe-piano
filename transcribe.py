@@ -15,7 +15,7 @@ from pyknon.music import NoteSeq, Note
 classes = np.arange(-30, 40)
 n_classes = len(classes)
 tempo = 180
-part_length = 3672*2
+part_length = 44100/6#7344
 input_length = 600
 suppress_noise = 10000
 
@@ -132,4 +132,5 @@ for t in range(len(g)):
     notes.append(active[i])
     del active[i]    
 
-test_output(notes)
+#test_output(notes)
+__import__('json').dump([{ 'name':n.name, 'midi':n.midi_number, 'octave':n.octave, 'val':n.value, 'time':n.time, 'dur':n.dur } for n in notes],open('output.json','w'))

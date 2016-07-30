@@ -2,3 +2,4 @@ pyknon
 scipy
 numpy
 matplotlib
+librosa
