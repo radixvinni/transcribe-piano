@@ -132,5 +132,4 @@ for t in range(len(g)):
     notes.append(active[i])
     del active[i]    
 
-#test_output(notes)
-__import__('json').dump([{ 'name':n.name, 'midi':n.midi_number, 'octave':n.octave, 'val':n.value, 'time':n.time, 'dur':n.dur } for n in notes],open('output.json','w'))
+test_output(notes)
